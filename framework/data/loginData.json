@@ -1,0 +1,9 @@
+{
+  "scenarios": [
+    {
+      "name": "Validate user can log in to QA tenant",
+      "runMode": "Y",
+      "openHome": true
+    }
+  ]
+}

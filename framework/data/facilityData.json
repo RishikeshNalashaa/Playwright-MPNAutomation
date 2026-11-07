@@ -1,0 +1,13 @@
+{
+  "scenarios": [
+    {
+      "name": "Validate facility docs navigation",
+      "runMode": "Y",
+      "openHome": true,
+      "expectedTitleContains": "",
+      "clickGetStarted": true,
+      "expectedHeading": "Installation",
+      "expectedUrlContains": "/docs/intro"
+    }
+  ]
+}

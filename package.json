@@ -2,13 +2,25 @@
   "name": "playwright-mpnautomation",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "test:qa": "cross-env ENV_PROFILE=qa playwright test",
+    "test:uat": "cross-env ENV_PROFILE=uat playwright test",
+    "test:prod": "cross-env ENV_PROFILE=prod playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.64.1",
-    "@types/node": "^26.6.6"
+    "@types/node": "^26.6.6",
+    "cross-env": "^10.1.0",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^17.2.3",
+    "xlsx": "^0.18.5"
   }
 }
